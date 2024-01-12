@@ -1,40 +1,43 @@
 <template>
     <div>
-        <b-navbar toggleable="lg" type="dark" variant="info">
-            <b-navbar-brand href="#">NavBar</b-navbar-brand>
+        <b-navbar type="dark" variant="dark">
+            <b-navbar-nav>
+                <b-navbar-brand class="title" href="#">NavBar</b-navbar-brand>
 
-            <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+                <b-nav-item-dropdown text="Opciones" left class="options">
+                    <b-dropdown-item>
+                        <b-icon icon="person-circle" font-scale="1.2" />
+                        <span class="p-3">Perfil</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item>
+                        <b-icon icon="gear" font-scale="1.2" />
+                        <span class="p-3">Ajustes</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item>
+                        <b-icon icon="box-arrow-right" font-scale="1.2" />
+                        <span class="p-3">Cerrar sesión</span>
+                    </b-dropdown-item>
+                </b-nav-item-dropdown>
 
-            <b-collapse id="nav-collapse" is-nav>
-                <b-navbar-nav>
-                    <b-nav-item href="#">Link</b-nav-item>
-                    <b-nav-item href="#" disabled>Disabled</b-nav-item>
-                </b-navbar-nav>
-
-                <!-- Right aligned nav items -->
-                <b-navbar-nav class="ml-auto">
-                    <b-nav-form>
-                        <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
-                        <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
-                    </b-nav-form>
-
-                    <b-nav-item-dropdown text="Lang" right>
-                        <b-dropdown-item href="#">EN</b-dropdown-item>
-                        <b-dropdown-item href="#">ES</b-dropdown-item>
-                        <b-dropdown-item href="#">RU</b-dropdown-item>
-                        <b-dropdown-item href="#">FA</b-dropdown-item>
-                    </b-nav-item-dropdown>
-
-                    <b-nav-item-dropdown right>
-                        <!-- Using 'button-content' slot -->
-                        <template #button-content>
-                            <em>User</em>
-                        </template>
-                        <b-dropdown-item href="#">Profile</b-dropdown-item>
-                        <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-                    </b-nav-item-dropdown>
-                </b-navbar-nav>
-            </b-collapse>
+                <b-form inline>
+                    <b-input-group>
+                        <b-form-input placeholder="Buscar" class="sm-2"></b-form-input>
+                        <b-button variant="outline-light" class="sm-2">
+                            <b-icon icon="search" aria-hidden="true"></b-icon>
+                        </b-button>
+                    </b-input-group>
+                </b-form>
+            </b-navbar-nav>
         </b-navbar>
     </div>
 </template>
+
+<style scoped>
+.title {
+    margin-left: 1rem;
+}
+
+.options {
+    margin-right: 55rem;
+}
+</style>

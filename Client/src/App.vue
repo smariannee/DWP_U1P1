@@ -8,17 +8,15 @@ import Sidebar from './components/Sidebar.vue';
     <Navbar />
     <b-container fluid>
       <b-row>
-        <b-col cols="3">
-          <Sidebar />
+        <b-col cols="2" style="padding: 0;">
+          <Sidebar />          
         </b-col>
-        <b-col cols="9">
-          <router-view />
+        <b-col cols="10">
+          <span>Aquí va el contenido del body</span>
         </b-col>
       </b-row>
     </b-container>
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
