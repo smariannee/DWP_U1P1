@@ -3,17 +3,17 @@
 
     <b-link :to="{ name: 'inicio' }" class="item">
       <span>Inicio</span>
-      <b-icon icon="house-door" font-scale="1.2" />
+      <b-icon icon="list" font-scale="1.2" />
     </b-link>
 
     <b-link :to="{ name: 'otros-espacios' }" class="item">
       <span>Rentar espacios</span>
-      <b-icon icon="people" font-scale="1.2" />
+      <b-icon icon="house-door" font-scale="1.2" />
     </b-link>
 
     <b-link :to="{ name: 'mis-espacios' }" class="item">
       <span>Renta tu espacio</span>
-      <b-icon icon="archive" font-scale="1.2" />
+      <b-icon icon="person-circle" font-scale="1.2" />
     </b-link>
 
     <div class="bottom-item" sticky>
