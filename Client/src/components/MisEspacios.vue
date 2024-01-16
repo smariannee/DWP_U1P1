@@ -1,7 +1,6 @@
 <template>
     <div>
-        <b-container>
-            <b-breadcrumb :items="items"></b-breadcrumb>
+        <b-container fluid>            
             <h3>Renta tu espacio</h3>
         </b-container>
     </div>
