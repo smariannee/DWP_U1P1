@@ -12,7 +12,7 @@ import Sidebar from './components/Sidebar.vue';
           <Sidebar />          
         </b-col>
         <b-col cols="10">
-          <span>Aquí va el contenido del body</span>
+          <router-view></router-view>
         </b-col>
       </b-row>
     </b-container>
