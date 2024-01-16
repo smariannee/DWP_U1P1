@@ -38,6 +38,22 @@
   </div>
 </template>
 
+<style scoped>
+.img {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+}
+
+.breadcrumb {
+  margin-bottom: 0;
+}
+
+.icon {
+  margin-left: 10px;
+}
+</style>
+
 <script>
 export default {
   data() {
@@ -56,19 +72,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.img {
-  width: 100%;
-  height: 250px;
-  border-radius: 5px;
-}
-
-.breadcrumb {
-  margin-bottom: 0;
-}
-
-.icon {
-  margin-left: 10px;
-}
-</style>

@@ -24,10 +24,6 @@
   </div>
 </template>
 
-<script>
-
-</script>
-
 <style scoped>
 .sidebar {
   position: sticky;

@@ -17,6 +17,12 @@
   </div>
 </template>
 
+<style scoped>
+.breadcrumb {
+  margin-bottom: 0;
+}
+</style>
+
 <script>
 export default {
   data() {
@@ -39,9 +45,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.breadcrumb {
-  margin-bottom: 0;
-}
-</style>

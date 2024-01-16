@@ -78,25 +78,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      items: [
-        {
-          text: 'Rentar espacios',
-          to: { name: 'otros-espacios' }
-        },
-        {
-          text: 'Catálogo de espacios',
-          active: true
-        }
-      ]
-    }
-  }
-}
-</script>
-
 <style scoped>
 .icon {
   margin-left: 10px;
@@ -124,3 +105,22 @@ export default {
   border-radius: 5px;
 }
 </style>
+
+<script>
+export default {
+  data() {
+    return {
+      items: [
+        {
+          text: 'Rentar espacios',
+          to: { name: 'otros-espacios' }
+        },
+        {
+          text: 'Catálogo de espacios',
+          active: true
+        }
+      ]
+    }
+  }
+}
+</script>
