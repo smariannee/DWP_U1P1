@@ -1,35 +1,47 @@
 <template>
-    <div>
-        <b-container>
-            <b-breadcrumb :items="items"></b-breadcrumb>
-            <h3>Ofertar tu espacio</h3>
-        </b-container>
-    </div>
+  <div>
+    <b-container fluid>
+      <b-row>
+        <b-col cols="12">
+          <b-card title="Oferta tu espacio" class="mt-3">
+            <template #header>
+              <b-breadcrumb :items="items" class="breadcrumb"></b-breadcrumb>
+            </template>
+            <b-card-text>
+              En este espacio coloca el precio de tu espacio dependiendo del horario que sea requerido.
+            </b-card-text>
+          </b-card>
+        </b-col>
+      </b-row>
+    </b-container>
+  </div>
 </template>
 
 <script>
 export default {
-    data() {
-      return {
-        items: [
-          {
-            text: 'Renta tu espacio',
-            to: { name: 'mis-espacios' }
-          },
-          {
-            text: 'Información de tu espacio',
-            to: { name: 'info' }
-          },
-          {
-            text: 'Ofertar espacio',
-            active: true
-          }
-        ]
-      }
+  data() {
+    return {
+      items: [
+        {
+          text: 'Renta tu espacio',
+          to: { name: 'mis-espacios' }
+        },
+        {
+          text: 'Información de tu espacio',
+          to: { name: 'info' }
+        },
+        {
+          text: 'Ofertar espacio',
+          active: true
+        }
+      ]
     }
   }
+}
 </script>
 
-<style>
-
+<style scoped>
+.breadcrumb {
+  margin-bottom: 0;
+}
 </style>
